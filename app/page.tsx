@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 import { ChevronUp, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const images = [
   'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070',
-  'https://images.unsplash.com/photo-1517373116367-d5a28e43af2a?q=80&w=2070',
   'https://images.unsplash.com/photo-1624969862644-791f3dc98927?q=80&w=2070',
   'https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=1740&auto=format',
 ];
@@ -37,6 +37,11 @@ const projects = [
     description: 'Exploring quantum computing principles for enhanced AI processing capabilities.',
     image: 'https://www.sciencefriday.com/wp-content/uploads/2025/01/quantum-computer.jpg',
   },
+  {
+    id: 'senior-research',
+    title: 'Senior Research',
+    description: 'Did you know that Heliothon is built off a high school research project? Heliothon is a continuation of a senior research project at Thomas Jefferson High School for Science and Technology by Sami Elsayed. The original project was mainly focused on optimizing AI/ML models within a Linux-based environment using a heterogenous technique.',  
+  }
 ];
 
 const inspirationalQuotes = [
@@ -119,6 +124,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
+              <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
               <a href="#home" className="text-white hover:text-gray-300">
                 Home
               </a>
@@ -130,6 +136,9 @@ export default function Home() {
               </a>
               <a href="#contact" className="text-white hover:text-gray-300">
                 Contact
+              </a>
+              <a href="/newsroom" className="text-white hover:text-gray-300">
+                Newsroom
               </a>
             </div>
           </div>
@@ -179,7 +188,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-8">About Us</h2>
               <p className="text-lg md:text-xl text-gray-300">
-                We are currently living through an unpresented era that some might argue is greater than the Internet Boom of the late 1990s. With the exponential rise in AI development, comes with the need of better hardware to accominate the future. With Heliothon's AI processing innovation, develop cutting-edge technology
+                We are currently living through an unprecedented era that some might argue is greater than the Internet Boom of the late 1990s. With the exponential rise in AI development, comes with the need of better hardware to accommodate the future. With Heliothon's AI processing innovation, develop cutting-edge technology
                 that combines advanced AI processing capabilities with revolutionary 3D chip-based printing methods that would make way for the development of 3D printed AI chips.
               </p>
             </div>
@@ -208,19 +217,17 @@ export default function Home() {
         <div className="fade-in max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Our Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="bg-black/50 border-gray-800 hover:border-gray-700 transition-colors">
-                <CardHeader>
-                  <div className="aspect-video overflow-hidden rounded-lg mb-4">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
-                  <CardTitle className="text-2xl">{project.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
+            {projects.map((project) => (
+              <div key={project.id} className="bg-black/50 border border-gray-800 rounded-lg overflow-hidden hover:border-gray-700 transition-colors">
+                <div className="aspect-video overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-gray-300 mb-4">{project.description}</p>
                   <Link
                     href={`/projects/${project.id}`}
@@ -228,8 +235,8 @@ export default function Home() {
                   >
                     Learn More
                   </Link>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -262,8 +269,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Heliothon</h3>
-              <p className="text-gray-400">
+              <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
+              <p className="text-gray-400 pt-3">
                 Pioneering the future of AI processors with revolutionary technology.
               </p>
             </div>
@@ -272,6 +279,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li><a href="#about" className="text-gray-400 hover:text-white">About</a></li>
                 <li><a href="#projects" className="text-gray-400 hover:text-white">Projects</a></li>
+                <li><a href="/newsroom" className="text-gray-400 hover:text-white">Newsroom</a></li>
               </ul>
             </div>
             <div>
@@ -279,6 +287,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li><a href="mailto:techfluente@gmail.com" className="text-gray-400 hover:text-white">Email</a></li>
                 <li><a href="https://www.linkedin.com/in/sami-elsayed-5ab943244/" className="text-gray-400 hover:text-white">LinkedIn</a></li>
+                <li><a href="https://instagram.com/heliothon" className="text-gray-400 hover:text-white">Instagram</a></li>
               </ul>
             </div>
             <div>

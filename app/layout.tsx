@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Space_Grotesk } from 'next/font/google';
+import AlertBanner from '@/components/AlertBanner';
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${spaceGrotesk.className} smooth-scroll`}>{children}</body>
+      <body className={`${spaceGrotesk.className} smooth-scroll`}>
+        {/* <AlertBanner /> */}
+        {children}
+      </body>
     </html>
   );
 }
