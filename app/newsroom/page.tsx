@@ -76,8 +76,8 @@ export default async function NewsroomPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Heliothon</h3>
-              <p className="text-gray-400">
+              <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
+              <p className="text-gray-400 pt-3">
                 Pioneering the future of AI processors with revolutionary technology.
               </p>
             </div>
