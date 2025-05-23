@@ -12,7 +12,7 @@ export default async function NewsroomPage() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
               <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
-              <a href="/" className="text-white hover:text-gray-300">
+              <a href="/heliothon-website" className="text-white hover:text-gray-300">
                 Home
               </a>
               <a href="/#about" className="text-white hover:text-gray-300">
