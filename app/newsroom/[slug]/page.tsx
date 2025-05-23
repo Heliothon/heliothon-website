@@ -24,19 +24,19 @@ export default async function ArticlePage({ params }: { params: { slug: string }
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
               <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
-              <a href="/" className="text-white hover:text-gray-300">
+              <a href="heliothon-website/" className="text-white hover:text-gray-300">
                 Home
               </a>
-              <a href="/#about" className="text-white hover:text-gray-300">
+              <a href="heliothon-website/#about" className="text-white hover:text-gray-300">
                 About
               </a>
-              <a href="/#projects" className="text-white hover:text-gray-300">
+              <a href="heliothon-website/#projects" className="text-white hover:text-gray-300">
                 Projects
               </a>
-              <a href="/#contact" className="text-white hover:text-gray-300">
+              <a href="heliothon-website/#contact" className="text-white hover:text-gray-300">
                 Contact
               </a>
-              <a href="/newsroom" className="text-white hover:text-gray-300">
+              <a href="heliothon-website/newsroom" className="text-white hover:text-gray-300">
                 Newsroom
               </a>
             </div>
