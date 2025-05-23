@@ -6,7 +6,7 @@ const nextConfig = {
   },
   images: { unoptimized: true },
   basePath: '/heliothon-website',
-  assetPrefix: '/heliothon-website/',
+  // assetPrefix: '/heliothon-website/',
   trailingSlash: true,
 };
 
