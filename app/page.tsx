@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { ChevronUp, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const images = [
   'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070',
@@ -40,7 +39,8 @@ const projects = [
   {
     id: 'senior-research',
     title: 'Senior Research',
-    description: 'Did you know that Heliothon is built off a high school research project? Heliothon is a continuation of a senior research project at Thomas Jefferson High School for Science and Technology by Sami Elsayed. The original project was mainly focused on optimizing AI/ML models within a Linux-based environment using a heterogenous technique.',  
+    description: 'Did you know that Heliothon is built off a high school research project? Heliothon is a continuation of a senior research project at Thomas Jefferson High School for Science and Technology by Sami Elsayed. The original project was mainly focused on optimizing AI/ML models within a Linux-based environment using a heterogenous technique.', 
+    image: '/img/heliothon-logo-black.png', 
   }
 ];
 
@@ -124,20 +124,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
-              <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
-              <a href="heliothon-website/#home" className="text-white hover:text-gray-300">
+              <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
+              <a href="/" className="text-white hover:text-gray-300">
                 Home
               </a>
-              <a href="heliothon-website/#about" className="text-white hover:text-gray-300">
+              <a href="#about" className="text-white hover:text-gray-300">
                 About
               </a>
-              <a href="heliothon-website/heliothon-website/#projects" className="text-white hover:text-gray-300">
+              <a href="#projects" className="text-white hover:text-gray-300">
                 Projects
               </a>
-              <a href="heliothon-website/#contact" className="text-white hover:text-gray-300">
+              <a href="#contact" className="text-white hover:text-gray-300">
                 Contact
               </a>
-              <a href="heliothon-website/newsroom" className="text-white hover:text-gray-300">
+              <a href="newsroom" className="text-white hover:text-gray-300">
                 Newsroom
               </a>
             </div>
@@ -196,7 +196,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4">People</h3>
               <div className="flex items-center space-x-6">
                 <img
-                  src="/static/img/sami-elsayed.jpeg"
+                  src="/img/sami-elsayed.jpeg"
                   alt="Team Member"
                   className="w-24 h-24 rounded-full object-cover"
                 />
@@ -269,7 +269,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
+              <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
               <p className="text-gray-400 pt-3">
                 Pioneering the future of AI processors with revolutionary technology.
               </p>
@@ -277,9 +277,9 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="heliothon-website/#about" className="text-gray-400 hover:text-white">About</a></li>
-                <li><a href="heliothon-website/#projects" className="text-gray-400 hover:text-white">Projects</a></li>
-                <li><a href="heliothon-website/newsroom" className="text-gray-400 hover:text-white">Newsroom</a></li>
+                <li><a href="/#about" className="text-gray-400 hover:text-white">About</a></li>
+                <li><a href="e/#projects" className="text-gray-400 hover:text-white">Projects</a></li>
+                <li><a href="/newsroom" className="text-gray-400 hover:text-white">Newsroom</a></li>
               </ul>
             </div>
             <div>
@@ -293,8 +293,8 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Legal</h4>
               <ul className="space-y-2">
-                <li><a href="heliothon-website/privacy" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                <li><a href="heliothon-website/terms" className="text-gray-400 hover:text-white">Terms of Service</a></li>
+                <li><a href="/privacy" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                <li><a href="/terms" className="text-gray-400 hover:text-white">Terms of Service</a></li>
               </ul>
             </div>
           </div>

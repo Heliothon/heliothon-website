@@ -1,9 +1,12 @@
 ---
 title: "The First of Many"
 excerpt: "Heliothon is coming to life!"
-image: "/static/img/heliothon-logo-black.png"
+image: "/img/heliothon-logo-black.png"
 date: "2025-05-21"
 ---
+
+***Last updated May 23, 2025***
+<br></br>
 
 Hello!
 
@@ -15,4 +18,13 @@ The project officially began on August 21st, 2024, with the inception of a senio
 <br></br>
 
 This post will be updated in the coming days with the full presentation and research paper on the project! Stay Tuned!
+<br></br>
+
+**At some point this post will include a link to the research repository, where you can view the files used in the research. Expect this to come no later than July 1st.**
+<br></br>
+
+**Presentation *(May 23, 2025)***:
+<br></br>
+
+<iframe src="/docs/Senior Research Presentation (official).pdf" width="100%" height="500px" frameborder="0"></iframe>
 <br></br>

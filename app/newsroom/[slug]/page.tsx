@@ -1,5 +1,4 @@
 import { getArticleBySlug, getAllArticles } from '@/lib/articles';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 
@@ -23,20 +22,20 @@ export default async function ArticlePage({ params }: { params: { slug: string }
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
-              <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
-              <a href="heliothon-website/" className="text-white hover:text-gray-300">
+              <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
+              <a href="/" className="text-white hover:text-gray-300">
                 Home
               </a>
-              <a href="heliothon-website/#about" className="text-white hover:text-gray-300">
+              <a href="/#about" className="text-white hover:text-gray-300">
                 About
               </a>
-              <a href="heliothon-website/#projects" className="text-white hover:text-gray-300">
+              <a href="/#projects" className="text-white hover:text-gray-300">
                 Projects
               </a>
-              <a href="heliothon-website/#contact" className="text-white hover:text-gray-300">
+              <a href="/#contact" className="text-white hover:text-gray-300">
                 Contact
               </a>
-              <a href="heliothon-website/newsroom" className="text-white hover:text-gray-300">
+              <a href="/newsroom" className="text-white hover:text-gray-300">
                 Newsroom
               </a>
             </div>
@@ -46,12 +45,10 @@ export default async function ArticlePage({ params }: { params: { slug: string }
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="aspect-video relative rounded-lg overflow-hidden mb-8">
-          <Image
+          <img
             src={article.image}
             alt={article.title}
-            fill
             className="object-cover"
-            priority
           />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{article.title}</h1>
@@ -67,8 +64,8 @@ export default async function ArticlePage({ params }: { params: { slug: string }
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Heliothon</h3>
-              <p className="text-gray-400">
+              <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
+              <p className="text-gray-400 pt-3">
                 Pioneering the future of AI processors with revolutionary technology.
               </p>
             </div>

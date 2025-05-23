@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { getAllArticles } from '@/lib/articles';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -12,19 +11,20 @@ export default async function NewsroomPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
-              <a href="heliothon-website/" className="text-white hover:text-gray-300">
+              <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
+              <a href="/" className="text-white hover:text-gray-300">
                 Home
               </a>
-              <a href="heliothon-website/#about" className="text-white hover:text-gray-300">
+              <a href="/#about" className="text-white hover:text-gray-300">
                 About
               </a>
-              <a href="heliothon-website/#projects" className="text-white hover:text-gray-300">
+              <a href="/#projects" className="text-white hover:text-gray-300">
                 Projects
               </a>
-              <a href="heliothon-website/#contact" className="text-white hover:text-gray-300">
+              <a href="/#contact" className="text-white hover:text-gray-300">
                 Contact
               </a>
-              <a href="heliothon-website/newsroom" className="text-white hover:text-gray-300">
+              <a href="/newsroom" className="text-white hover:text-gray-300">
                 Newsroom
               </a>
             </div>
@@ -76,7 +76,7 @@ export default async function NewsroomPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <Image src="/static/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
+              <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
               <p className="text-gray-400 pt-3">
                 Pioneering the future of AI processors with revolutionary technology.
               </p>
@@ -84,9 +84,9 @@ export default async function NewsroomPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="heliothon-website/#about" className="text-gray-400 hover:text-white">About</a></li>
-                <li><a href="heliothon-website/#projects" className="text-gray-400 hover:text-white">Projects</a></li>
-                <li><a href="heliothon-website/newsroom" className="text-gray-400 hover:text-white">Newsroom</a></li>
+                <li><a href="/#about" className="text-gray-400 hover:text-white">About</a></li>
+                <li><a href="/#projects" className="text-gray-400 hover:text-white">Projects</a></li>
+                <li><a href="/newsroom" className="text-gray-400 hover:text-white">Newsroom</a></li>
               </ul>
             </div>
             <div>
@@ -100,8 +100,8 @@ export default async function NewsroomPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Legal</h4>
               <ul className="space-y-2">
-                <li><a href="heliothon-website/privacy" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                <li><a href="heliothon-website/terms" className="text-gray-400 hover:text-white">Terms of Service</a></li>
+                <li><a href="/privacy" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                <li><a href="/terms" className="text-gray-400 hover:text-white">Terms of Service</a></li>
               </ul>
             </div>
           </div>
