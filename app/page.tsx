@@ -21,25 +21,19 @@ const projects = [
   {
     id: '3d-chip-printer',
     title: '3D Chip Printer',
-    description: 'Revolutionary technology for printing AI processors using advanced 3D printing techniques.',
+    description: 'We\'re developing custom AI processor architectures designed for 3D chip fabrication. This is a radical new approach to hardware prototyping that reduces manufacturing cost, time, and energy usage.',
     image: 'https://wimg.heraldcorp.com/news/cms/2025/02/02/news-p.v1.20250201.31d0359f2b1d4666ad141785aa05a56e_P1.jpg',
   },
   {
-    id: 'ai-architecture',
-    title: 'AI Architecture',
-    description: 'Developing next-generation AI processor architectures for improved performance and efficiency.',
-    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070',
-  },
-  {
-    id: 'quantum-integration',
-    title: 'Quantum Integration',
-    description: 'Exploring quantum computing principles for enhanced AI processing capabilities.',
-    image: 'https://www.sciencefriday.com/wp-content/uploads/2025/01/quantum-computer.jpg',
+    id: 'navaar',
+    title: 'Navaar',
+    description: 'Navaar is a lightweight, fault-tolerant network that runs AI workloads across edge devices like Raspberry Pis, old laptops, and underutilized machines. Think of it as “AI compute infrastructure from recycled tech,” empowering education, nonprofits, and developers globally.',
+    image: '/img/navaar-logo-white.png',
   },
   {
     id: 'senior-research',
     title: 'Senior Research',
-    description: 'Did you know that Heliothon is built off a high school research project? Heliothon is a continuation of a senior research project at Thomas Jefferson High School for Science and Technology by Sami Elsayed. The original project was mainly focused on optimizing AI/ML models within a Linux-based environment using a heterogenous technique.', 
+    description: 'Did you know Heliothon was born from a high school research project? Founder Sami Elsayed began this journey through a senior research capstone at Thomas Jefferson High School for Science and Technology. The project focused on optimizing AI/ML model performance within Linux-based environments using heterogeneous compute techniques. What started as a school project quickly evolved into a vision for the future of AI infrastructure.', 
     image: '/img/heliothon-logo-black.png', 
   }
 ];
@@ -125,7 +119,7 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-8">
               <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={100} height={40} className="h-8 w-auto" />
-              <a href="/heliothon-website" className="text-white hover:text-gray-300">
+              <a href="/" className="text-white hover:text-gray-300">
                 Home
               </a>
               <a href="#about" className="text-white hover:text-gray-300">
@@ -156,7 +150,7 @@ export default function Home() {
         <div className="text-center">
           <h1 className="typing-text mb-4">{typedText}</h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-            Pioneering the future of AI with revolutionary 3D chip-based printing technology
+            Pioneering the future of AI Hardware
           </p>
         </div>
       </section>
@@ -188,8 +182,9 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-8">About Us</h2>
               <p className="text-lg md:text-xl text-gray-300">
-                We are currently living through an unprecedented era that some might argue is greater than the Internet Boom of the late 1990s. With the exponential rise in AI development, comes with the need of better hardware to accommodate the future. With Heliothon's AI processing innovation, develop cutting-edge technology
-                that combines advanced AI processing capabilities with revolutionary 3D chip-based printing methods that would make way for the development of 3D printed AI chips.
+              We are entering a new technological renaissance, one that surpasses even the Internet Boom of the late 1990s. Artificial Intelligence is transforming every aspect of our world, but current hardware systems are struggling to keep up. Heliothon is a next-generation startup focused on building accessible, scalable, and sustainable AI infrastructure for the future. From revolutionary 3D-printed AI chips to distributed AI compute networks, our mission is to democratize access to intelligent computing, at every layer of the stack.
+              
+              We are students, engineers, and dreamers, building the impossible from the ground up.
               </p>
             </div>
             <div className="pt-8 border-t border-gray-800">
@@ -271,7 +266,7 @@ export default function Home() {
             <div>
               <img src="/img/heliothon-logo-color.png" alt="Heliothon Logo" width={200} height={200} className="h-12 w-auto" />
               <p className="text-gray-400 pt-3">
-                Pioneering the future of AI processors with revolutionary technology.
+                Pioneering the future of AI Hardware
               </p>
             </div>
             <div>
