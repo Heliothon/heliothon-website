@@ -5,13 +5,13 @@ image: "/img/heliothon-logo-black.png"
 date: "2025-05-21"
 ---
 
-***Last updated May 23, 2025***
+***Last updated June 2, 2025***
 <br></br>
 
 Hello!
 
 <br></br>
-If you are here that means you are interested in learning more about Heliothon, a project where we try to design and develop a versatile AI chip that would be available for computers alike.
+If you are here that means you are interested in learning more about Heliothon, a project where we try to design and develop a versatile AI chip that would be available for computers alike. The research project has also sparked a concept of a decentralized compute mesh, which allows for the distribution of AI workloads across multiple devices, making it possible to run complex AI models on low-cost hardware.
 <br></br>
 
 The project officially began on August 21st, 2024, with the inception of a senior research project named "Optimizing AI Workloads in Linux-based Heterogeneous Systems." The research project was then presented to a group of high school students during TJHSST's research symposium called tjSTAR on May 21st, 2025, where the author, Sami Elsayed, first presented the idea of designing and building a AI computer chip for versatility and efficiency.
