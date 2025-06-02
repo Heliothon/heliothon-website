@@ -1,7 +1,7 @@
 ---
 title: "Heliothon Unveils Navaar Prototype"
 excerpt: "A Major Leap Towards Decentralized AI Computing on Edge Devices"
-image: "../../heliothon-website/public/img/navaar-logo-white.png"
+image: "/img/navaar-logo-white.png"
 date: "2025-06-01"
 ---
 
